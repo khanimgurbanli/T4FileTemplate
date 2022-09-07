@@ -1,0 +1,15 @@
+C:\Users\KHANIM\source\repos\T4File\T4File\bin\Debug\net6.0\T4File.exe
+C:\Users\KHANIM\source\repos\T4File\T4File\bin\Debug\net6.0\T4File.deps.json
+C:\Users\KHANIM\source\repos\T4File\T4File\bin\Debug\net6.0\T4File.runtimeconfig.json
+C:\Users\KHANIM\source\repos\T4File\T4File\bin\Debug\net6.0\T4File.dll
+C:\Users\KHANIM\source\repos\T4File\T4File\bin\Debug\net6.0\T4File.pdb
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.csproj.AssemblyReference.cache
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.AssemblyInfoInputs.cache
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.AssemblyInfo.cs
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.csproj.CoreCompileInputs.cache
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.dll
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\refint\T4File.dll
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.pdb
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\T4File.genruntimeconfig.cache
+C:\Users\KHANIM\source\repos\T4File\T4File\obj\Debug\net6.0\ref\T4File.dll

@@ -1,0 +1,41 @@
+﻿<#@ template debug="false" hostspecific="false" Language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data" #>
+<#@ import namespace="System.Linq" #> 
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #> 
+<#@ import namespace="System.IO" #>
+
+
+    
+<#
+
+var path = @"C:\Users\KHANIM\source\repos\T4File\T4File\Models";
+Directory.CreateDirectory(Path.Combine(path));
+
+const string connection = "server=DESKTOP-7VK5UN3\\SQLEXPRESS;database=Northwind;Integrated Security = True ";
+
+SqlConnection con = new SqlConnection(connection);
+      con.Open();
+SqlCommand cmd = new SqlCommand($"SELECT TABLE_NAME\r\nFROM INFORMATION_SCHEMA.TABLES\r\nWHERE TABLE_TYPE = 'BASE TABLE' ", con);
+
+     SqlDataReader dr = cmd.ExecuteReader();
+      while(dr.Read())
+      {
+        FileStream fs=File.Create(Path.Combine(path,dr[0].ToString().Replace(" ","" ) + ".cs" ));
+        fs.Close();
+
+        StreamWriter writer = new StreamWriter(Path.Combine(path,dr[0].ToString() + ".cs"));
+        
+          writer.WriteLine("namespace FileExample.Models");
+          writer.WriteLine("{");
+          writer.WriteLine("public class " + dr[0].ToString());
+          writer.WriteLine("{");
+          writer.WriteLine("}");
+          writer.WriteLine("}");
+        
+     }
+      con.Close();
+#>
